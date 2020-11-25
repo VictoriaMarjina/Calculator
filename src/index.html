@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="calculator">
+      
+        <form class="calculator__form">
+            
+            <div class="calculator__row">
+                <input type="display" value="0" class="calculator__display" id="display" ></p>
+            </div>
+            
+            <div class="calculator__row">
+                <button type="button" value="c" id="calculator__clear" class="calculator__key calculator__clear">C</button>
+                <button type="button" value="ce" id ="calculator__backspace" class="calculator__key calculator__backspace">CE</button>
+                <button type="button" value="%" id="calculator__percent" class="calculator__key calculator__percent">%</button>
+                <button type="button" value="+" id="calculator__key-operand" class="calculator__key calculator__button calculator__key-operand" onClick="getResultForOperand(this.value)">+</button>
+            </div>
+            
+            <div class="calculator__row">
+                <button type="button" value="9" id="calculator__button" class="calculator__key calculator__button" onClick="getOutput(this.value)">9</button>
+                <button type="button" value="8" id="calculator__button" class="calculator__key calculator__button" onClick="getOutput(this.value)">8</button>
+                <button type="button" value="7" id="calculator__button" class="calculator__key calculator__button" onClick="getOutput(this.value)">7</button>
+                <button type="button" value="-" id="calculator__key-operand" class="calculator__key calculator__button calculator__key-operand" onClick="getResultForOperand(this.value)">-</button>
+            </div>
+            
+            <div class="calculator__row">
+                <button type="button" value="6" id="calculator__button" class="calculator__key calculator__button" onClick="getOutput(this.value)">6</button>
+                <button type="button" value="5" id="calculator__button" class="calculator__key calculator__button" onClick="getOutput(this.value)">5</button>
+                <button type="button" value="4" id="calculator__button" class="calculator__key calculator__button" onClick="getOutput(this.value)">4</button>
+                <button type="button" value="*" id="calculator__key-operand" class="calculator__key calculator__button calculator__key-operand" onClick="getResultForOperand(this.value)">*</button>
+            </div>
+           
+            <div class="calculator__row">
+                <button type="button" value="3" id="calculator__button" class="calculator__key calculator__button" onClick="getOutput(this.value)">3</button>
+                <button type="button" value="2" id="calculator__button" class="calculator__key calculator__button" onClick="getOutput(this.value)">2</button>
+                <button type="button" value="1" id="calculator__button" class="calculator__key calculator__button" onClick="getOutput(this.value)">1</button>
+                <button type="button" value="/" id="calculator__key-operand" class="calculator__key calculator__button calculator__key-operand" onClick="getResultForOperand(this.value)">/</button>
+            </div>
+           
+            <div class="calculator__row">
+                <button type="button" value="0" id="calculator__button" class="calculator__key calculator__button" onClick="getOutput(this.value)">0</button>
+                <button type="button" value="." id="calculator_dot" class="calculator__key calculator__button">.</button>
+                <button type="button" value="=" id="calculator__key--equal" class="calculator__key  calculator__key--equal">=</button>
+            </div>
+        </form>
+    </div>
+<script src='./index.js'></script>
+</body>
+</html>
